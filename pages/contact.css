@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: Karla;
+}
+
+
+body {
+    background-color: #445078;
+}
+
+.info {
+    color: white;
+    margin: auto;
+    width: 60%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 4rem;
+    margin-top: -4rem;
+}
+
+.column {
+    background-color: white;
+}
+
+.column.right {
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    height: 13rem;
+}
+
+.column.right p {
+    font-size: 1.7rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 61%;
+    font-weight: bold;
+    color: #445078;
+}
+
+.column.right span {
+    font-size: 1.3rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.material-icons {
+    vertical-align: middle; 
+    color: #445078;
+}
+
+.column.left {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 1.1rem;
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 1.1rem;
+}
+  
+input[type=submit] {
+    background-color:#445078;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+  
+input[type=submit]:hover {
+    background-color:#1a2138;
+}
+  
+input[type=text]:focus {
+    border: 3px solid #1a2138;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 2rem;
+    }
+
+    .column.left {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .column.right {
+        width: 100%;
+    }
+
+    .info {
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1.5rem;
+    }
+
+    .column.left, .column.right {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .info {
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+
+    input[type=text], input[type=email], textarea {
+        font-size: 1rem;
+    }
+
+    input[type=submit] {
+        font-size: 1rem;
+    }
+}
+
+/* For very small screens (e.g., mobile phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    .info {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .column.left, .column.right {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    input[type=text], input[type=email], textarea {
+        font-size: 0.9rem;
+    }
+
+    input[type=submit] {
+        font-size: 0.9rem;
+    }
+}
