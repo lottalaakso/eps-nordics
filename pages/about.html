@@ -10,7 +10,7 @@
 
     <body>
         <!-- Navbar --> 
-        <nav class="nav">
+        <nav class="nav" id="navbar">
         <div class="button">
             <a href="../index.html"><img src="../eps-01.jpg"></a>
         </div>
@@ -24,19 +24,129 @@
         <div class="nav_menu">
         <ul id="nav-links">
             <li class="button"><span><a href="../index.html">home</a></span></li>
-            <li class="button"><span><a class="active" href="about.html">about</a></span></li>
+            <li class="button"><span><a class="activated" href="about.html">about</a></span></li>
             <li class="button"><span><a href="products.html">products</a></span></li>
             <li class="button"><span><a href="contact.html">contact</a></span></li>
         </ul>
         </div>
         </nav>
 
+        <!-- Text content -->
+
+        <div class="container">
+            <div class="column">
+                <h2>Who We Are</h2>
+                <p>EPS Nordics is a leading provider of aviation refuelling solution in the Nordic region, with decades
+                    of expertise in delivering safe, reliable, and eddicient fuel services to the aviation industry.
+                </p>
+            </div>
+
+            <div class="column">
+                <h2>Our Mission</h2>
+                <p>To provide seamless, high-quality aviation refuelling services, ensuring operational excellence,
+                    safety and environmental sustainability for our clients.
+                </p>
+            </div>
+
+            <div class="column">
+                <h2>Our Vision</h2>
+                <p>To be the trusted partner for aviation fuel services in the Nordic region, supporting the growth
+                    of the aviation industry with the highest standards of service and safety.
+                </p>
+            </div>
+        </div>
+
+        <!-- Logo slideshow -->
+
+        <div class="logo-container">
+            <h2>Our Products</h2>
+
+        <div class="carousel-wrapper">
+        <div class="carousel-track">
+
+            <div class="logo">
+                <img src="../logos/alfons-haar.png" style="width:100%" alt="alfons-haar">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/efco_logo.svg" style="width:100%" alt="efco">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/punainen.png" style="width:100%" alt="emcowheaton">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/Isoil.png" alt="isoil">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/kaucon2_2.png" alt="kaucon">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/Parker-Velcon-x.png" alt="parker-velcon">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/toinensininenidk.png" alt="aerofuel">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/Trelleborg_logo.png" alt="trelleborg">
+            </div>
+
+            <div class="logo">
+                <img src="../logos/todo.png" alt="todo">
+            </div>
+
+        </div>
+        </div>
+
+        </div>
+
         <!-- Footer -->
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="button">
                 <a href="../index.html"><img src="../eps-valkoinen.png"></a>
             </div>
-        </div>
+        </div> -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector('.carousel-track');
+  const logos = Array.from(document.querySelectorAll('.logo'));
+  const visibleCount = 4;
+  let index = 0;
+
+  // Clone first N slides and append to the end
+  for (let i = 0; i < visibleCount; i++) {
+    const clone = logos[i].cloneNode(true);
+    track.appendChild(clone);
+  }
+
+  const slideWidth = logos[0].offsetWidth;
+
+  function slide() {
+    index++;
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+
+    // Reset to start (seamless)
+    if (index === logos.length) {
+      setTimeout(() => {
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(0)';
+        index = 0;
+      }, 500);
+    }
+  }
+
+  setInterval(slide, 3000); // every 3 seconds
+});
+</script>
+
+
     </body>
 
 </html>

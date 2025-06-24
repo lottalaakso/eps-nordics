@@ -9,19 +9,9 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #BFBBA9;
-    max-height: 10rem;
+    background-color: #000000;
+    max-height: 2rem;
+    color: white;
 }
 
-.footer img {
-    width: auto;
-    height: 6.8rem;
-    margin: auto 1rem;
-    padding-left: 8rem;
-}
-
-.footer button {
-    transition: all 0.5s;
-    cursor: pointer;
-  }
   

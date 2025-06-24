@@ -31,42 +31,6 @@ body {
     background-color: white;
 }
 
-.column.right {
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    border-radius: 0.3rem;
-    height: 13rem;
-}
-
-.column.right p {
-    font-size: 1.7rem;
-    margin: auto;
-    margin-bottom: 1rem;
-    width: 61%;
-    font-weight: bold;
-    color: #445078;
-}
-
-.column.right span {
-    font-size: 1.3rem;
-    padding: 1rem;
-    display: inline-block;
-}
-
-.material-icons {
-    vertical-align: middle; 
-    color: #445078;
-}
-
-.column.left {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 60%;
-    padding: 1rem;
-    font-size: 1.3rem;
-    border-radius: 0.3rem;
-}
-
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;

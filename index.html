@@ -11,7 +11,7 @@
 
 <body>
     <!-- Navbar --> 
-    <nav class="nav">
+    <nav class="nav" id="navbar">
         <div class="button">
             <a href="index.html"><img src="eps-01.jpg"></a>
         </div>
@@ -24,7 +24,7 @@
 
         <div class="nav_menu">
         <ul id="nav-links">
-            <li class="button"><span><a class="active" href="index.html">home</a></span></li>
+            <li class="button"><span><a class="activated" href="index.html">home</a></span></li>
             <li class="button"><span><a href="pages/about.html">about</a></span></li>
             <li class="button"><span><a href="pages/products.html">products</a></span></li>
             <li class="button"><span><a href="pages/contact.html">contact</a></span></li>
@@ -32,13 +32,93 @@
     </div>
     </nav>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="img">
-            <a href="index.html"><img src="eps-valkoinen.png"></a>
-        </div>
+<div class="slideshow">
 
+<div class="mySlides fade">
+  <img src="eps-kansi3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="eps-kansilogo.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="info">
+    <p>Specialized in refuelling equipment for all kinds of conditions</p>
+    <div class="button2">
+        <a href="pages/about.html">Read more</a>
     </div>
+</div>
+    
+
+<!-- Footer -->
+<!-- <div class="footer">
+    <p>EPS Nordics</p>
+</div> -->
+
+<script>
+    let slideIndex = 1;
+let autoSlideInterval;
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+function plusSlides(n) {
+  slideIndex += n;
+  showSlides(slideIndex);
+  resetAutoSlide();
+}
+
+function currentSlide(n) {
+  slideIndex = n;
+  showSlides(slideIndex);
+  resetAutoSlide();
+}
+
+function autoShowSlides() {
+  slideIndex++;
+  showSlides(slideIndex);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  autoSlideInterval = setInterval(autoShowSlides, 4000);
+}
+
+// Initialize
+showSlides(slideIndex);
+autoSlideInterval = setInterval(autoShowSlides, 4000);
+
+
+</script>
   
 </body>
 
