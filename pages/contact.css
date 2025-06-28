@@ -4,27 +4,20 @@
     font-family: Karla;
 }
 
-
-body {
-    background-color: #445078;
-}
-
 .info {
-    color: white;
+    color:#445078;
+    text-align: center;
     margin: auto;
-    width: 60%;
+    width: 50%;
     margin-top: 3rem;
     font-size: 1.5rem;
 }
 
 .container {
     display: flex;
-    align-items: flex-start;
     column-gap: 4rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    padding: 4rem;
-    margin-top: -4rem;
+    width: 50%;
+    margin: auto;
 }
 
 .column {
@@ -72,82 +65,50 @@ input[type=submit]:hover {
 input[type=text]:focus {
     border: 3px solid #1a2138;
 }
-
-/* Media Queries for Responsiveness */
-
-/* For tablets and smaller devices */
-@media screen and (max-width: 1024px) {
-    .container {
-        flex-direction: row;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        padding: 2rem;
-    }
-
-    .column.left {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .column.right {
-        width: 100%;
-    }
-
-    .info {
-        width: 80%;
-        margin-top: 2rem;
-    }
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    justify-content: center;
+    align-items: center;
 }
+  
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+  
+.popup-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 /* For mobile devices */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding: 1.5rem;
-    }
-
-    .column.left, .column.right {
-        width: 100%;
-        margin-bottom: 1.5rem;
+        margin: auto;
+        width: 80%;
     }
 
     .info {
         width: 90%;
         margin-top: 1.5rem;
-    }
-
-    input[type=text], input[type=email], textarea {
-        font-size: 1rem;
-    }
-
-    input[type=submit] {
-        font-size: 1rem;
-    }
-}
-
-/* For very small screens (e.g., mobile phones in portrait mode) */
-@media screen and (max-width: 480px) {
-    .info {
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .container {
-        padding: 1rem;
-    }
-
-    .column.left, .column.right {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    input[type=text], input[type=email], textarea {
-        font-size: 0.9rem;
-    }
-
-    input[type=submit] {
-        font-size: 0.9rem;
     }
 }

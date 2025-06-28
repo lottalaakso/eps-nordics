@@ -35,29 +35,34 @@
 
         <!-- Text -->
         <div class="info">
-            <p>For any enquiries please use the form below or the contact details on this page:</p>
+            <p>For any enquiries please use the form below:</p>
         </div>
 
         
         <div class="container">
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Name *" oninvalid="this.setCustomValidity('Please fill out this field')" 
+          onchange="this.setCustomValidity('')" required>
+      
+          <input type="email" id="email" name="email" placeholder="Email *" oninvalid="this.setCustomValidity('Please fill out this field')"
+          onchange="this.setCustomValidity('')" required>
+      
+          <input type="text" id="company" name="company" placeholder="Company">
+      
+          <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+      
+          <input type="submit" id="button" value="Send message">
 
-            <!-- Contact form -->
-            <form>
-                <label for="name">full name</label>
-                <input type="text" id="name" name="name" placeholder="your full name..">
-            
-                <label for="email">email</label>
-                <input type="email" id="email" name="email" placeholder="your email..">
-                
-                <label for="company">company</label>
-                <input type="text" id="company" name="company" placeholder="your company..">
-                
-                <label for="subject">message</label>
-                <textarea id="message" name="message" placeholder="write your message here.." style="height:200px"></textarea>
-                
-                <input type="submit" value="submit">
-            </form>
+          <p>* Required</p>
+        </form>
+      </div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p id="popup-message">Your message has been sent successfully!</p>
+          <button onclick="closePopup()">Close</button>
         </div>
+      </div>
 
         <!-- Footer -->
         <!-- <div class="footer">
@@ -65,6 +70,41 @@
                 <a href="../index.html"><img src="../eps-valkoinen.png"></a>
             </div>
         </div> -->
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init('_dWIFfrq8o-PkruSu'); 
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const btn = form.querySelector('input[type="submit"]');
+    btn.value = 'Sending...';
+
+    emailjs.sendForm('default_service', 'template_dl9aa2l', form)
+      .then(function(response) {
+        form.reset();
+        btn.value = 'Send message';
+        showPopup('Your message has been sent successfully!');
+      }, function(error) {
+        btn.value = 'Send message';
+        showPopup('Oops! Something went wrong. Please try again.');
+      });
+  });
+
+  function showPopup(message) {
+    const popup = document.getElementById('popup');
+    const popupMessage = document.getElementById('popup-message');
+    popupMessage.textContent = message;
+    popup.style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
+
     </body>
 
 </html>

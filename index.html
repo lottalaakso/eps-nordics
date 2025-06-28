@@ -35,11 +35,17 @@
 <div class="slideshow">
 
 <div class="mySlides fade">
-  <img src="eps-kansi3.png" style="width:100%">
+  <picture>
+    <source srcset="eps-kansi2-phone.png" media="(max-width: 768px)">
+    <img src="eps-kansi3.png" style="width:100%" alt="Slide 1">
+  </picture>
 </div>
 
 <div class="mySlides fade">
-  <img src="eps-kansilogo.png" style="width:100%">
+  <picture>
+    <source srcset="eps-kansi1-phone.png" media="(max-width: 768px)">
+    <img src="eps-kansilogo.png" style="width:100%" alt="Slide 2">
+  </picture>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -56,9 +62,7 @@
 
 <div class="info">
     <p>Specialized in refuelling equipment for all kinds of conditions</p>
-    <div class="button2">
-        <a href="pages/about.html">Read more</a>
-    </div>
+    <button class="button2" onclick="location.href='pages/about.html'">Read more</button>
 </div>
     
 
