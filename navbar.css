@@ -123,7 +123,7 @@ body {
   }
 
   .nav_menu ul {
-    position: fixed;
+    position: absolute;
     top: 7rem; 
     left: 0;
     width: 100%;
