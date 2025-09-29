@@ -142,69 +142,98 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector('.carousel-track');
-  const logos = Array.from(document.querySelectorAll('.logo'));
-  const visibleCount = 4;
-  let index = 0;
+    const track = document.querySelector('.carousel-track');
+    const logos = Array.from(document.querySelectorAll('.logo'));
+    const visibleCountDesktop = 4;
+    let index = 0;
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+    let autoSlide = null;
 
-  // Clone first N slides and append to the end
-  for (let i = 0; i < visibleCount; i++) {
-    const clone = logos[i].cloneNode(true);
-    track.appendChild(clone);
-  }
-
-  const slideWidth = logos[0].offsetWidth;
-
-  function moveToSlide(newIndex) {
-    index = newIndex;
-    track.style.transition = 'transform 0.5s ease-in-out';
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
-
-    // Reset to start (seamless)
-    if (index >= logos.length) {
-      setTimeout(() => {
-        track.style.transition = 'none';
-        track.style.transform = 'translateX(0)';
-        index = 0;
-      }, 500);
+    function setupClones() {
+        // Remove previous clones
+        const allLogos = Array.from(track.children);
+        if (allLogos.length > logos.length) {
+            allLogos.slice(logos.length).forEach(el => track.removeChild(el));
+        }
+        // Only clone for desktop
+        if (window.innerWidth > 768) {
+            for (let i = 0; i < visibleCountDesktop; i++) {
+                const clone = logos[i].cloneNode(true);
+                track.appendChild(clone);
+            }
+        }
     }
-    if (index < 0) {
-      setTimeout(() => {
-        track.style.transition = 'none';
-        track.style.transform = `translateX(-${(logos.length - 1) * slideWidth}px)`;
-        index = logos.length - 1;
-      }, 500);
+
+    function getSlideWidth() {
+        return logos[0].offsetWidth;
     }
-  }
 
-  function nextSlide() {
-    moveToSlide(index + 1);
-  }
+    function moveToSlide(newIndex) {
+        const slideWidth = getSlideWidth();
+        index = newIndex;
 
-  function prevSlide() {
-    moveToSlide(index - 1);
-  }
+        if (window.innerWidth > 768) {
+            // Desktop seamless
+            track.style.transition = 'transform 0.5s ease-in-out';
+            track.style.transform = `translateX(-${index * slideWidth}px)`;
 
-  let autoSlide = setInterval(nextSlide, 3000); // every 3 seconds
+            if (index >= logos.length) {
+                setTimeout(() => {
+                    track.style.transition = 'none';
+                    track.style.transform = 'translateX(0)';
+                    index = 0;
+                }, 500);
+            }
+            if (index < 0) {
+                setTimeout(() => {
+                    track.style.transition = 'none';
+                    track.style.transform = `translateX(-${(logos.length - 1) * slideWidth}px)`;
+                    index = logos.length - 1;
+                }, 500);
+            }
+        } else {
+            // Mobile: one logo at a time, no clones
+            if (index >= logos.length) index = 0;
+            if (index < 0) index = logos.length - 1;
 
-  document.querySelector('.next').addEventListener('click', () => {
-    nextSlide();
-    resetAutoSlide();
-  });
+            track.style.transition = 'transform 0.5s ease-in-out';
+            track.style.transform = `translateX(-${index * slideWidth}px)`;
+        }
+    }
 
-  document.querySelector('.prev').addEventListener('click', () => {
-    prevSlide();
-    resetAutoSlide();
-  });   
+    function nextSlide() { moveToSlide(index + 1); }
+    function prevSlide() { moveToSlide(index - 1); }
 
-  function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(slide, 3000);
-  }
+    function startAutoSlide() {
+        if (autoSlide) clearInterval(autoSlide);
+        autoSlide = setInterval(nextSlide, window.innerWidth > 768 ? 3000 : 2000);
+    }
 
+    startAutoSlide();
 
+    if (nextBtn && prevBtn) {
+        nextBtn.addEventListener('click', () => { nextSlide(); startAutoSlide(); });
+        prevBtn.addEventListener('click', () => { prevSlide(); startAutoSlide(); });
+    }
+
+    window.addEventListener('resize', () => {
+        setupClones();
+        index = 0; // reset to first logo on resize
+        moveToSlide(index);
+        startAutoSlide();
+    });
+
+    setupClones();
+    moveToSlide(index);
 });
+
 </script>
+
+
+
+
+
 
 </body>
 
