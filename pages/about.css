@@ -55,16 +55,33 @@
 }
 
 .carousel-wrapper {
-  width: 100%;
   overflow: hidden;
-  position: relative;
-  margin-top: 2rem;
+  flex: 1;
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+
+.carousel-container {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel-btn {
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  color: black;
+  background: none;
+}
+
 
 .logo {
   flex: 0 0 25%; /* 4 logos visible = 100/4 = 25% */
