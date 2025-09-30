@@ -203,10 +203,6 @@ img.hover-shadow {
     cursor: default; 
   }
 
-  .hover-shadow:hover {
-    display: none;
-  }
-
   h2 {
     font-size: 1rem;
   }
