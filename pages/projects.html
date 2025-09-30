@@ -12,9 +12,6 @@
 
   gtag('config', 'G-QXTWZFWPRN');
 </script>
-
-
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="projects.css">
@@ -47,84 +44,142 @@
         </div>
         </nav>
 
-        <!-- Gallery -->
-        <div class="gallery-container">
-            <p>Projects we've been involved in</p>
+        <!-- Pienet kuvat -->
+    
+    <h2>Projects we've been involved in</h2>
+
+    <div class="row">
+    
+    <div class="column">
+        <img src="../images/kuva1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+        <img src="../images/kuva2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+        <img src="../images/kuva3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+        <img src="../images/kuva4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+        <img src="../images/kuva5.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+        <img src="../images/kuva6.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+        <img src="../images/kuva7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    </div>
+
+    <div class="column">
+        <img src="../images/kuva9.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+    </div>
+
+    </div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <!--Modal isot kuvat-->
+
+    <div class="gallery-container">
 
         <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
             <img src="../images/kuva1.jpg" style="width:100%" alt="Slide 1">
         </div>
 
         <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
             <img src="../images/kuva2.png" style="width:100%" alt="Slide 2">
         </div>
 
         <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
             <img src="../images/kuva3.png" style="width:100%" alt="Slide 3">
         </div>
 
         <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
             <img src="../images/kuva4.png" style="width:100%" alt="Slide 4">
         </div>
 
         <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
             <img src="../images/kuva5.png" style="width:100%" alt="Slide 5">
         </div>
 
         <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
             <img src="../images/kuva6.png" style="width:100%" alt="Slide 6">
         </div>
 
         <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
             <img src="../images/kuva7.jpg" style="width:100%" alt="Slide 7">
         </div>
 
         <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
             <img src="../images/kuva9.jpg" style="width:100%" alt="Slide 8">
         </div>
 
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
 
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+    <div class="caption">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Modal pienet kuvat -->
+
+    <div class="modal_small">
+
+    <div class="column">
+      <img class="demo cursor" src="../images/kuva1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Slide 1">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/kuva2.png" style="width:100%" onclick="currentSlide(2)" alt="Slide 2">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/kuva3.png" style="width:100%" onclick="currentSlide(3)" alt="Slide 3">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/kuva4.png" style="width:100%" onclick="currentSlide(4)" alt="Slide 4">
+    </div>
+
+     <div class="column">
+        <img class="demo cursor" src="../images/kuva5.png" style="width:100%" onclick="currentSlide(5)" alt="©Ilpo Launoila">
+    </div>    
+
+    <div class="column">
+        <img class="demo cursor" src="../images/kuva6.png" style="width:100%" onclick="currentSlide(6)" alt="©Ilpo Launoila">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="../images/kuva7.jpg" style="width:100%" onclick="currentSlide(7)" alt="©Ilpo Launoila">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="../images/kuva9.jpg" style="width:100%" onclick="currentSlide(8)" alt="©Ilpo Launoila">
+    </div>
+
+    </div>
+
   </div>
-
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-      
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva1.jpg" style="width:100%" onclick="currentSlide(1)" alt="©Ilpo Launoila">
-            </div>
-
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva2.png" style="width:100%" onclick="currentSlide(2)" alt="©Ilpo Launoila">
-            </div>
-
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva3.png" style="width:100%" onclick="currentSlide(3)" alt="©Ilpo Launoila">
-            </div>
-
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva4.png" style="width:100%" onclick="currentSlide(4)" alt="©Ilpo Launoila">
-            </div>
-
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva5.png" style="width:100%" onclick="currentSlide(5)" alt="©Ilpo Launoila">
-            </div>    
-
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva6.png" style="width:100%" onclick="currentSlide(6)" alt="©Ilpo Launoila">
-            </div>
-
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva7.jpg" style="width:100%" onclick="currentSlide(7)" alt="©Ilpo Launoila">
-            </div>
-
-            <div class="column">
-                <img class="demo cursor" src="../images/kuva9.jpg" style="width:100%" onclick="currentSlide(8)" alt="©Ilpo Launoila">
-            </div>
-        </div>
+</div>
 
 
         <!-- Footer -->
@@ -135,28 +190,48 @@
         </div> -->
 
 <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+function openModal() {
+  // Only allow modal on desktop
+  if (window.innerWidth <= 768) {
+    return; // do nothing on mobile
+  }
+  document.getElementById("myModal").style.display = "block";
+}
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
 
-    function showSlides(n) {
-      let i;
-      const slides = document.getElementsByClassName("mySlides");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-      slides[slideIndex - 1].style.display = "block";
-    }
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
-    document.addEventListener("keydown", function (event) {
+   document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowLeft") {
       plusSlides(-1);
     } else if (event.key === "ArrowRight") {
