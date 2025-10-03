@@ -38,29 +38,24 @@ body {
   transition: 0.5s;
 }
 
-.button a.active {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .button span:after {
-  content: '\00bb';
+  content: "";
   position: absolute;
-  opacity: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -10px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 5px;
-  font-size: 2rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #445078;
+  transition: width 0.5s ease;
 }
 
 .button:hover span:after {
-  opacity: 1;
-  right: 0;
+  width: 100%;
+}
+
+.button a.active span:after {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .button img{
