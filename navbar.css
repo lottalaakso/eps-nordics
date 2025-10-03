@@ -52,10 +52,16 @@ body {
   width: 100%;
 }
 
-.button a.active span:after {
+.button:active {
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #445078;
 }
 
 .button img{
