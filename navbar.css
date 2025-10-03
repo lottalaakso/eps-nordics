@@ -52,7 +52,7 @@ body {
   width: 100%;
 }
 
-.button:active {
+.button a.active {
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
