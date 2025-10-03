@@ -38,30 +38,29 @@ body {
   transition: 0.5s;
 }
 
-.button span:after {
+.button span a {
+  position: relative;
+  text-decoration: none;
+  color: #445078;
+}
+
+
+.button span a::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
+  bottom: 2px;
   width: 0;
   height: 2px;
   background-color: #445078;
-  transition: width 0.5s ease;
+  transition: width 0.5s ease, trransform 0.5s ease;
+  transform: translateX(-50%);
 }
 
-.button:hover span:after {
-  width: 100%;
-}
-
-.button a.active {
-  width: 100%;
-  font-size: 2rem;
-  font-weight: bold;
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #445078;
+.button span a:hover::after,
+.button span a.activated::after {
+  width: 95%;                
+  transform: translateX(-50%); 
 }
 
 .button img{
