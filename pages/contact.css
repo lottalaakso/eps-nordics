@@ -5,18 +5,27 @@
 }
 
 .info {
-    color:#445078;
+    color:#ffffff;
     text-align: center;
     margin: auto;
-    width: 50%;
-    margin-top: 3rem;
-    font-size: 1.5rem;
+    width: 90%;
+    font-size: 1.7rem;
 }
+
+.box {
+    background-color: rgb(102, 111, 139);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 55%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}   
 
 .container {
     display: flex;
     column-gap: 4rem;
-    width: 50%;
+    width: 90%;
     margin: auto;
 }
 
@@ -49,8 +58,8 @@ input[type=email], select, textarea {
 }
   
 input[type=submit] {
-    background-color:#445078;
-    color: white;
+    color:#445078;
+    background-color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;

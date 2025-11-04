@@ -14,15 +14,17 @@
 </script>
 
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>EPS Nordics - Contact</title>
-        <link rel="icon" type="image/x-icon" href="../eps-valkoinen.png"/>
-        <link rel="stylesheet" href="contact.css">
-        <link rel="stylesheet" href="../navbar.css">
-        <link rel="stylesheet" href="../footer.css">
-        <script src="../navbar.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta description="EPS Nordics is a provider of refuelling solutions 
+          with decades of expertise in delivering safe, reliable, and efficient fuel services to the aviation industry.">
+      <title>EPS Nordics - Contact</title>
+      <link rel="icon" type="image/x-icon" href="../eps.png"/>
+      <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="../navbar.css">
+      <link rel="stylesheet" href="../footer.css">
+      <script src="../navbar.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
     <body>
@@ -49,27 +51,30 @@
         </nav>
 
         <!-- Text -->
+        
+
+      <div class="box">
         <div class="info">
             <p>For any enquiries please use the form below:</p>
         </div>
-
-        
         <div class="container">
-        <form id="contact-form">
-          <input type="text" id="name" name="name" placeholder="Name *" oninvalid="this.setCustomValidity('Please fill out this field')" 
-          onchange="this.setCustomValidity('')" required>
-      
-          <input type="email" id="email" name="email" placeholder="Email *" oninvalid="this.setCustomValidity('Please fill out this field')"
-          onchange="this.setCustomValidity('')" required>
-      
-          <input type="text" id="company" name="company" placeholder="Company">
-      
-          <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-      
-          <input type="submit" id="button" value="Send message">
+          
+          <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Name *" oninvalid="this.setCustomValidity('Please fill out this field')" 
+            onchange="this.setCustomValidity('')" required>
+        
+            <input type="email" id="email" name="email" placeholder="Email *" oninvalid="this.setCustomValidity('Please fill out this field')"
+            onchange="this.setCustomValidity('')" required>
+          
+            <input type="text" id="company" name="company" placeholder="Company *" oninvalid="this.setCustomValidity('Please fill out this field')"            onchange="this.setCustomValidity('')" required>
+          
+            <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+          
+            <input type="submit" id="button" value="Send message">
 
-          <p>* Required</p>
-        </form>
+            <p>* Required</p>
+          </form>
+        </div>
       </div>
 
       <div id="popup" class="popup">
