@@ -1,6 +1,5 @@
-* {
-    font-family: Karla;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 .container {
     width: 88%;
@@ -20,8 +19,11 @@
 
 .column h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.1rem;
     letter-spacing: 0.1rem;
+    font-family: "Poppins", serif;
+    color: #445078;
+    font-weight: 200;
 }
 
 .column p {
@@ -38,7 +40,7 @@
     right: -0.6rem;
     width: 0.1rem;
     height: 100%;
-    background-color: #737373; /* or any color you like */
+    background-color: #737373; 
 }
 
 .logo-container {
@@ -50,8 +52,11 @@
 }
 
 .logo-container h2 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     letter-spacing: 0.1rem;
+    font-family: "Poppins", serif;
+    color: #445078;
+    font-weight: 200;
 }
 
 .carousel-wrapper {

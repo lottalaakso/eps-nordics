@@ -44,37 +44,63 @@ body {
   color: #445078;
 }
 
-
-.button span a::after {
-  content: "";
+.nav_menu .button::after,
+.nav_menu .button::before {
+  content: '';
   position: absolute;
-  left: 50%;
-  bottom: 2px;
-  width: 0;
+  width: 97%;
   height: 2px;
-  background-color: #445078;
-  transition: width 0.5s ease, trransform 0.5s ease;
-  transform: translateX(-50%);
+  background: linear-gradient(to right, #fe6a72, #6e89c8);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
 }
 
-.button span a:hover::after,
-.button span a.activated::after {
-  width: 95%;                
-  transform: translateX(-50%); 
+.nav_menu .button::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.nav_menu .button:hover::after,
+.nav_menu .button:hover::before {
+  transform: scaleX(1);
+}
+
+.nav_menu .button span a.activated::after,
+.nav_menu .button span a.activated::before {
+  content: '';
+  position: absolute;
+  width: 97%;
+  height: 2px;
+  background: linear-gradient(to right, #fe6a72, #6e89c8);
+  left: 0;
+  transform: scaleX(1);
+}
+
+.nav_menu .button span a.activated::after {
+  bottom: -5px;
+  transform-origin: right;
+}
+
+.nav_menu .button span a.activated::before {
+  top: -5px;
+  transform-origin: left;
 }
 
 .button img{
     width: auto;
     height: 6.8rem;
     margin: auto 1rem;
-    padding-left: 8rem;
+    padding-left: 5rem;
 }
 
 .nav_menu ul {
     margin: auto 1rem;
     padding: 0;
     display: flex;
-    padding-right: 6rem;
+    padding-right: 5rem;
 }
 
 .nav_menu ul li {
@@ -86,7 +112,9 @@ body {
     color: #445078;
     padding: 1rem;
     display: block;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+    font-weight: 300;
 }
 
 .nav_hamburger {
