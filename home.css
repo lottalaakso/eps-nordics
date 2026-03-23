@@ -74,27 +74,27 @@
     color: #445078;
     letter-spacing: 0.15rem;
     font-family: "Poppins", serif;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .button2 {
-    margin: auto;
-    margin-top: -1rem;
-    background-color: transparent;
-    border-radius: 1rem;
-    width: auto;
+    display: inline-block;
+    background-color: #f4f4f4;
+    color: #333;
+    border: none;
+    border-radius: 0.5rem; 
     cursor: pointer;
-    padding: 1rem;
-    font-size: 1.3rem;
-    transition: 0.3s ease;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .button2:hover {
-    background: #d9555b;
+    background-color: #d9555b;
     color: white;
-    border-color: transparent;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transform:  translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(217, 85, 91, 0.4);
+    transform: scale(1.05); 
 }
 
 @media screen and (max-width: 768px) {

@@ -1,369 +1,143 @@
 <!DOCTYPE html>
-<html>
-    <head>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXTWZFWPRN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QXTWZFWPRN');
-</script>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta description="EPS Nordics is a provider of refuelling solutions 
-        with decades of expertise in delivering safe, reliable, and efficient fuel services to the aviation industry.">
+    <meta name="description" content="EPS Nordics - Projects we've been involved in.">
     <title>EPS Nordics - Projects</title>
     <link rel="icon" type="image/x-icon" href="../eps.png"/>
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="../navbar.css">
     <link rel="stylesheet" href="../footer.css">
-    <script src="../navbar.js"></script>
-    <script src="projects.js"></script>
-    <link rel="preload" as="image" href="../images/kuva1.jpg">
-    <link rel="preload" as="image" href="../images/kuva2.png">
-    <link rel="preload" as="image" href="../images/kuva3.png">
-    <link rel="preload" as="image" href="../images/kuva4.png">
-    <link rel="preload" as="image" href="../images/kuva5.png">
-    <link rel="preload" as="image" href="../images/kuva6.png">
-    <link rel="preload" as="image" href="../images/kuva7.jpg">
-    <link rel="preload" as="image" href="../images/kuva9.jpg">
-    <link rel="preload" as="image" href="../images/kuva10.jpg">
-    <link rel="preload" as="image" href="../images/kuva11.jpg">
-    <link rel="preload" as="image" href="../images/kuva12.jpg">
-    <link rel="preload" as="image" href="../images/kuva13.jpg">
-    <link rel="preload" as="image" href="../images/kuva14.jpg">
-    <link rel="preload" as="image" href="../images/kuva15.jpg">
-    </head>
+</head>
 
-    <body>
-        <!-- Navbar --> 
-        <nav class="nav" id="navbar">
+<body>
+    <nav class="nav" id="navbar">
         <div class="button">
-            <a href="../home"><img src="../eps-01.jpg"></a>
+            <a href="../home"><img src="../eps-01.jpg" alt="Logo"></a>
         </div>
-
         <div class="nav_hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </div>
-
         <div class="nav_menu">
-        <ul id="nav-links">
-            <li class="button"><span><a href="../home">home</a></span></li>
-            <li class="button"><span><a href="about">about</a></span></li>
-            <li class="button"><span><a class="activated" href="projects">projects</a></span></li>
-            <li class="button"><span><a href="contact">contact</a></span></li>
-        </ul>
+            <ul id="nav-links">
+                <li class="button"><a href="../home">home</a></li>
+                <li class="button"><a href="about">about</a></li>
+                <li class="button"><a class="activated" href="projects">projects</a></li>
+                <li class="button"><a href="contact">contact</a></li>
+            </ul>
         </div>
-        </nav>
+    </nav>
 
-        <!-- Pienet kuvat -->
-    
-    <h2>Projects we've been involved in</h2>
+    <main class="projects-page">
+        <h2 class="section-title">Projects we've been involved in</h2>
 
-    <div class="row">
-    
-    <div class="column">
-        <img src="../images/kuva1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva5.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva6.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva9.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva10.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva11.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva12.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva13.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva14.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-        <img src="../images/kuva15.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
-    </div>
-
-    </div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <!--Modal isot kuvat-->
-
-    <div class="gallery-container">
-
-        <div class="mySlides">
-          <div class="numbertext">1 / 14</div>
-            <img src="../images/kuva1.jpg" style="width:100%" alt="Slide 1">
+        <div class="projects-grid" id="gallery">
+            <div class="project-item"><img src="../images/kuva1.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva2.png" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva3.png" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva4.png" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva5.png" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva6.png" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva7.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva9.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva10.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva11.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva12.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva13.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva14.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
+            <div class="project-item"><img src="../images/kuva15.jpg" alt="©Ilpo Launoila" onclick="openLightbox(this)"></div>
         </div>
+    </main>
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 14</div>
-            <img src="../images/kuva2.png" style="width:100%" alt="Slide 2">
+    <div id="lightbox" class="lightbox-modal" onclick="handleOutsideClick(event)">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        
+        <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Full size project">
+            <p id="lightbox-caption"></p>
         </div>
+        
+        <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 14</div>
-            <img src="../images/kuva3.png" style="width:100%" alt="Slide 3">
+    <div class="footer">
+        <div class="img">
+            <a href="../home.html"><img src="../eps-valkoinen.png"></a>
         </div>
-
-        <div class="mySlides">
-            <div class="numbertext">4 / 14</div>
-            <img src="../images/kuva4.png" style="width:100%" alt="Slide 4">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">5 / 14</div>
-            <img src="../images/kuva5.png" style="width:100%" alt="Slide 5">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">6 / 14</div>
-            <img src="../images/kuva6.png" style="width:100%" alt="Slide 6">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">7 / 14</div>
-            <img src="../images/kuva7.jpg" style="width:100%" alt="Slide 7">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">8 / 14</div>
-            <img src="../images/kuva9.jpg" style="width:100%" alt="Slide 8">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">9 / 14</div>
-            <img src="../images/kuva10.jpg" style="width:100%" alt="Slide 9">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">10 / 14</div>
-            <img src="../images/kuva11.jpg" style="width:100%" alt="Slide 10">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">11 / 14</div>
-            <img src="../images/kuva12.jpg" style="width:100%" alt="Slide 11">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">12 / 14</div>
-            <img src="../images/kuva13.jpg" style="width:100%" alt="Slide 12">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">13 / 14</div>
-            <img src="../images/kuva14.jpg" style="width:100%" alt="Slide 13">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">14 / 14</div>
-            <img src="../images/kuva15.jpg" style="width:100%" alt="Slide 14">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-
-    <div class="caption">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Modal pienet kuvat -->
-
-    <div class="modal_small">
-
-    <div class="column">
-      <img class="demo cursor" src="../images/kuva1.jpg" style="width:100%" onclick="currentSlide(1)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-      <img class="demo cursor" src="../images/kuva2.png" style="width:100%" onclick="currentSlide(2)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-      <img class="demo cursor" src="../images/kuva3.png" style="width:100%" onclick="currentSlide(3)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-      <img class="demo cursor" src="../images/kuva4.png" style="width:100%" onclick="currentSlide(4)" alt="©Ilpo Launoila">
-    </div>
-
-     <div class="column">
-        <img class="demo cursor" src="../images/kuva5.png" style="width:100%" onclick="currentSlide(5)" alt="©Ilpo Launoila">
-    </div>    
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva6.png" style="width:100%" onclick="currentSlide(6)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva7.jpg" style="width:100%" onclick="currentSlide(7)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva9.jpg" style="width:100%" onclick="currentSlide(8)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva10.jpg" style="width:100%" onclick="currentSlide(9)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva11.jpg" style="width:100%" onclick="currentSlide(10)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva12.jpg" style="width:100%" onclick="currentSlide(11)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva13.jpg" style="width:100%" onclick="currentSlide(12)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva14.jpg" style="width:100%" onclick="currentSlide(13)" alt="©Ilpo Launoila">
-    </div>
-
-    <div class="column">
-        <img class="demo cursor" src="../images/kuva15.jpg" style="width:100%" onclick="currentSlide(14)" alt="©Ilpo Launoila">
-    </div>
-
-    </div>
-
-  </div>
-</div>
-
-
-        <!-- Footer -->
-        <!-- <div class="footer">
-            <div class="img">
-                <a href="../index.html"><img src="../eps-valkoinen.png"></a>
+        <div class="footer-content">
+            <p>© 2026 EPS Nordics Oy</p>
+            <div class="footer-pdf">
+                    <a href="../EPSnordicsTietosuojaseloste:Privacy-policy.pdf" target="_blank"  rel="noopener noreferrer">Privacy policy</a>
             </div>
-        </div> -->
+        </div>
+    </div>
 
-<script>
-function openModal() {
-  // Only allow modal on desktop
-  if (window.innerWidth <= 768) {
-    return; // do nothing on mobile
-  }
-  document.getElementById("myModal").style.display = "block";
-}
+    <script>
+        let currentImgIndex = 0;
+        const allImages = [];
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+        // Kerätään kaikki gallerian kuvat listaan heti sivun latauduttua
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll(".project-item img");
+            images.forEach((img) => {
+                allImages.push({ src: img.src, alt: img.alt });
+            });
+        });
 
-var slideIndex = 1;
-showSlides(slideIndex);
+        // Avaa Lightbox
+        function openLightbox(element) {
+            const lightbox = document.getElementById("lightbox");
+            // Etsitään klikatun kuvan indeksi listasta
+            currentImgIndex = allImages.findIndex(img => img.src === element.src);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+            lightbox.style.display = "flex";
+            updateLightbox();
+            document.body.style.overflow = "hidden"; // Estää taustan skrollauksen
+        }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+        // Päivittää modaalin sisällön (kuva + teksti)
+        function updateLightbox() {
+            const img = document.getElementById("lightbox-img");
+            const caption = document.getElementById("lightbox-caption");
+            img.src = allImages[currentImgIndex].src;
+            caption.innerText = allImages[currentImgIndex].alt;
+        }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+        // Vaihtaa kuvaa (nuolet)
+        function changeSlide(n) {
+            currentImgIndex += n;
+            if (currentImgIndex >= allImages.length) currentImgIndex = 0;
+            if (currentImgIndex < 0) currentImgIndex = allImages.length - 1;
+            updateLightbox();
+        }
 
-   document.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowLeft") {
-      plusSlides(-1);
-    } else if (event.key === "ArrowRight") {
-      plusSlides(1);
-    }
-  });
-  let startX = 0;
-  let endX = 0;
+        // Sulkee Lightboxin
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+            document.body.style.overflow = "auto"; // Palauttaa skrollauksen
+        }
 
-  const swipeArea = document.querySelector('.gallery-container'); // adjust if needed
+        // Sulkee modaalin klikattaessa mustaa taustaa
+        function handleOutsideClick(e) {
+            if (e.target.id === "lightbox") {
+                closeLightbox();
+            }
+        }
 
-  if (window.innerWidth <= 768 && swipeArea) {
-    swipeArea.addEventListener('touchstart', function (e) {
-      startX = e.touches[0].clientX;
-    });
+        // Näppäimistötuki (Esc ja nuolet)
+        document.addEventListener("keydown", (e) => {
+            const lightbox = document.getElementById("lightbox");
+            if (lightbox.style.display === "flex") {
+                if (e.key === "Escape") closeLightbox();
+                if (e.key === "ArrowRight") changeSlide(1);
+                if (e.key === "ArrowLeft") changeSlide(-1);
+            }
+        });
+    </script>
 
-    swipeArea.addEventListener('touchmove', function (e) {
-      endX = e.touches[0].clientX;
-    });
-
-    swipeArea.addEventListener('touchend', function () {
-      const swipeThreshold = 50;
-
-      if (startX - endX > swipeThreshold) {
-        plusSlides(1); // swipe left → next
-      } else if (endX - startX > swipeThreshold) {
-        plusSlides(-1); // swipe right → prev
-      }
-
-      // reset
-      startX = 0;
-      endX = 0;
-    });
-  }
-  </script>
-
-    </body>
-
+    <script src="../navbar.js"></script>
+</body>
 </html>

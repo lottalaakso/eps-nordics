@@ -6,24 +6,48 @@
 }
 
 .info {
-    color:#ffffff;
+    color:#000000;
     text-align: center;
     margin: auto;
-    width: 90%;
+    width: 70%;
     font-size: 1.7rem;
 }
+
+.info h1 {
+    text-align: center;
+    margin:2rem 0 2rem 0;
+    font-size: 2.8rem; 
+    font-weight: 200;   
+    color: #000000;     
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.info h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+    height: 2px;
+    background-color: #445078; 
+    border-radius: 2px;
+}
+
 .info p {
     font-family: "Poppins", serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .box {
-    background-color: rgb(197, 196, 196);
+    background-color: rgb(247, 247, 247);
     padding: 1.5rem;
     border-radius: 8px;
     width: 55%;
     margin: auto;
-    margin-top: 0.5rem;
     margin-bottom: 2rem;
     animation: fadeIn 1s ease-out forwards;
 }   
@@ -31,7 +55,6 @@
 .info-container {
     width: 45%;
     margin: auto;
-    margin-top: 2rem;
     animation: fadeIn 1s ease-out forwards;
     display: flex;
     justify-content: center;
@@ -106,8 +129,8 @@ input[type=submit] {
 }
   
 input[type=submit]:hover {
-    color: #445078;
-    background-color: white ;
+    color: white;
+    background-color: #d9555b;
 }
   
 input[type=text]:focus {
@@ -146,6 +169,11 @@ input[type=text]:focus {
     cursor: pointer;
 }
 
+.container h4 {
+    font-size: 0.7rem;
+    font-weight: 300;
+
+}
 
 /* For mobile devices */
 @media screen and (max-width: 768px) {
