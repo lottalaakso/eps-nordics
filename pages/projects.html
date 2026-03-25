@@ -9,25 +9,31 @@
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="../navbar.css">
     <link rel="stylesheet" href="../footer.css">
+    <script src="../navbar.js"></script>
 </head>
 
 <body>
-    <nav class="nav" id="navbar">
+    <!-- Navbar --> 
+        <nav class="nav" id="navbar">
         <div class="button">
-            <a href="../home"><img src="../eps-01.jpg" alt="Logo"></a>
+            <a href="../home"><img src="../eps-01.jpg"></a>
         </div>
+
         <div class="nav_hamburger" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+
         <div class="nav_menu">
-            <ul id="nav-links">
-                <li class="button"><a href="../home">home</a></li>
-                <li class="button"><a href="about">about</a></li>
-                <li class="button"><a class="activated" href="projects">projects</a></li>
-                <li class="button"><a href="contact">contact</a></li>
-            </ul>
+        <ul id="nav-links">
+            <li class="button"><span><a href="../home">home</a></span></li>
+            <li class="button"><span><a href="about">about</a></span></li>
+            <li class="button"><span><a class="activated" href="projects">projects</a></span></li>
+            <li class="button"><span><a href="contact">contact</a></span></li>
+        </ul>
         </div>
-    </nav>
+        </nav>
 
     <main class="projects-page">
         <h2 class="section-title">Projects we've been involved in</h2>
@@ -79,7 +85,6 @@
         let currentImgIndex = 0;
         const allImages = [];
 
-        // Kerätään kaikki gallerian kuvat listaan heti sivun latauduttua
         document.addEventListener("DOMContentLoaded", () => {
             const images = document.querySelectorAll(".project-item img");
             images.forEach((img) => {
@@ -87,10 +92,8 @@
             });
         });
 
-        // Avaa Lightbox
         function openLightbox(element) {
             const lightbox = document.getElementById("lightbox");
-            // Etsitään klikatun kuvan indeksi listasta
             currentImgIndex = allImages.findIndex(img => img.src === element.src);
 
             lightbox.style.display = "flex";
@@ -98,7 +101,6 @@
             document.body.style.overflow = "hidden"; // Estää taustan skrollauksen
         }
 
-        // Päivittää modaalin sisällön (kuva + teksti)
         function updateLightbox() {
             const img = document.getElementById("lightbox-img");
             const caption = document.getElementById("lightbox-caption");
@@ -138,6 +140,5 @@
         });
     </script>
 
-    <script src="../navbar.js"></script>
 </body>
 </html>
