@@ -5,6 +5,20 @@
     font-family: Karla;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto; 
+}
+
 .info {
     color:#000000;
     text-align: center;
