@@ -44,11 +44,10 @@ body {
   color: #445078;
 }
 
-.nav_menu .button::after,
-.nav_menu .button::before {
+.nav_menu .button::after {
   content: '';
   position: absolute;
-  width: 97%;
+  width: 90%;
   height: 2px;
   background: linear-gradient(to right, #fe6a72, #6e89c8);
   bottom: -5px;
@@ -58,18 +57,12 @@ body {
   transition: transform 0.4s ease-out;
 }
 
-.nav_menu .button::before {
-  top: -5px;
-  transform-origin: left;
-}
 
-.nav_menu .button:hover::after,
-.nav_menu .button:hover::before {
+.nav_menu .button:hover::after {
   transform: scaleX(1);
 }
 
-.nav_menu .button span a.activated::after,
-.nav_menu .button span a.activated::before {
+.nav_menu .button span a.activated::after {
   content: '';
   position: absolute;
   width: 97%;
@@ -82,11 +75,6 @@ body {
 .nav_menu .button span a.activated::after {
   bottom: -5px;
   transform-origin: right;
-}
-
-.nav_menu .button span a.activated::before {
-  top: -5px;
-  transform-origin: left;
 }
 
 .button img{
