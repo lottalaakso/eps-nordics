@@ -24,6 +24,7 @@ body {
     top: 0;
     z-index: 1000;
     background-color: rgba(255, 255, 255);
+    margin-top: 1rem;
 }
 
 .button {
@@ -79,7 +80,7 @@ body {
 
 .button img{
     width: auto;
-    height: 6.8rem;
+    height: 7rem;
     margin: auto 1rem;
     padding-left: 5rem;
 }

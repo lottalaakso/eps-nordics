@@ -1,31 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-* {
-    font-family: Karla;
-}
-
-/* --- LISÄÄ TÄMÄ OSA --- */
-html, body {
-    margin: 0;
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Varmistaa, että sivu täyttää aina vähintään ruudun korkeuden */
-}
-/* ---------------------- */
-
 .footer {
-    display: block; /* Voit myös muuttaa tämän muotoon display: flex; jos haluat asetteluun joustavuutta */
-    margin-top: auto; /* Tämä toimii nyt, koska body on flex! */
+    display: block; 
+    margin-top: auto; 
     width: 100%;
     background-color: #445078 ;
     text-align: center;
 }
 
-/* Loppuosa koodistasi pysyy täysin samana... */
 .footer img {
     width: 9rem;
     height: auto;
