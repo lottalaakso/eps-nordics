@@ -10,20 +10,121 @@ body {
     min-height: 100vh;
 }
 
+.header {
+    background-color: #f4f6f9;
+    color: #445078;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 .content-wrapper {
     flex: 1 0 auto; 
     width: 100%;
-    
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center; 
-    
     max-width: 1200px;      
     margin: 0 auto;        
     padding: 2rem 1rem;     
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row; 
+    gap: 2.5rem;         
+    align-items: flex-start;
 }
+
+.sidebar {
+    flex: 0 0 260px; 
+    background-color: #f4f6f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 3rem;
+}
+
+.sidebar h2 {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    color: #445078;
+    border-bottom: 2px solid #e2e5ec;
+    padding-bottom: 0.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 0.4rem;
+}
+
+.sidebar .tab-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    color: #4f5d73;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.sidebar .tab-link:hover {
+    background-color: #e2e5ec;
+    color: #445078;
+}
+
+.sidebar .tab-link.active {
+    background-color: #445078;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.product-content {
+    flex: 1;
+    min-width: 0; 
+}
+
+.product-content h1 {
+    color: #445078;
+    margin-top: 0;
+}
+
+.tab-content {
+    display: none; 
+    margin-top: 3rem;
+}
+
+.tab-content.active {
+    display: flex !important;
+    flex-direction: column;    
+    align-items: center;       
+}
+
+.tab-content::before {
+    display: none; 
+}
+
+.product-logo {
+    max-width: 100%;
+    max-height: 100%;
+    width: 250px;
+    height: 100px;
+    object-fit: contain;       
+    margin: 0 1rem 2rem 1rem;  
+    display: inline-block;
+}
+
+.tab-content .product-logo {
+    align-self: center;        
+}
+
 
 .footer {
     flex-shrink: 0; 
@@ -31,4 +132,186 @@ body {
     width: 100%;
     background-color: #445078;
     text-align: center;
+}
+
+.logo-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.capabilities-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 3rem;
+}
+
+.capabilities-container .brand-capabilities {
+    flex: 1;
+    margin-bottom: 0; 
+}
+
+.brand-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px; 
+    padding: 0 2rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    white-space: nowrap; 
+}
+
+.btn-primary {
+    background-color: #445078;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #353f60;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #445078;
+    border: 2px solid #445078;
+}
+
+.btn-secondary:hover {
+    background-color: #e2e5ec;
+    transform: translateY(-1px);
+}
+
+.parker-mobile {
+    display: none;
+}
+
+.parker-desktop {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; 
+        gap: 1.5rem;
+    }
+    
+    .sidebar {
+        flex: 1 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .product-logo {
+        max-width: 110px;
+        max-height: 40px;
+        margin-bottom: 1.5rem;
+    }
+
+    .capabilities-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .brand-actions {
+        flex-direction: column; 
+        gap: 0.75rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%; 
+    }
+
+    /* 1. Muutetaan pääasettelu allekkain */
+    .content-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    /* 2. Muutetaan sivupalkki vaakasuorassa rullattavaksi "pillerivalikoksi" */
+    .sidebar {
+        flex: none;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.75rem;
+        box-shadow: none;
+        background-color: transparent; /* Poistetaan taustalaatikko mobiilista */
+    }
+
+    .sidebar h2 {
+        display: none; /* Piilotetaan "Product Categories" -otsikko mobiilissa tilan säästämiseksi */
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        overflow-x: auto; /* Sallii vaakaskrollauksen */
+        padding-bottom: 0.75rem;
+        scrollbar-width: none; /* Piilottaa rullauspalkin Firefoxissa */
+        -webkit-overflow-scrolling: touch; /* Sulava rullaus iOS-laitteilla */
+    }
+
+    .sidebar ul::-webkit-scrollbar {
+        display: none; /* Piilottaa rullauspalkin Chromessa/Safarissa */
+    }
+
+    .sidebar li {
+        margin-bottom: 0;
+        flex: 0 0 auto; /* Estää painikkeita puristumasta kasaan */
+    }
+
+    /* 3. Muotoillaan valikon painikkeet "pillereiksi" */
+    .sidebar .tab-link {
+        padding: 0.6rem 1.2rem;
+        background-color: #f4f6f9;
+        border: 1px solid #e2e5ec;
+        white-space: nowrap; /* Pitää brändin nimen yhdellä rivillä */
+        font-size: 0.9rem;
+    }
+
+    .sidebar .tab-link.active {
+        background-color: #445078;
+        color: #ffffff;
+        border-color: #445078;
+    }
+
+    /* 4. Tuotesisällön optimointi mobiiliin */
+    .product-content {
+        width: 100%;
+    }
+
+    .parker-desktop {
+        display: none !important; /* Piilotetaan ongelmallinen syndikaatio kokonaan */
+    }
+    
+    .parker-mobile {
+        display: block; /* Näytetään siisti, itse tehty mobiiliversio */
+    }
 }

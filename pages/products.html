@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXTWZFWPRN"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXTWZFWPRN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QXTWZFWPRN');
-</script>
-
+          gtag('config', 'G-QXTWZFWPRN');
+        </script>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta description="EPS Nordics is a provider of refuelling solutions 
             with decades of expertise in delivering safe, reliable, and efficient fuel services to the aviation industry.">
-        <title>EPS Nordics - About</title>
+        <title>EPS Nordics - Products</title>
         <link rel="icon" type="image/x-icon" href="../eps.png"/>
         <link rel="stylesheet" href="about.css">
         <link rel="stylesheet" href="../navbar.css">
@@ -28,65 +24,491 @@
     </head>
 
     <body>
-        <!-- Navbar --> 
         <nav class="nav" id="navbar">
-        <div class="button">
-            <a href="../home"><img src="../eps.png"></a>
-        </div>
+            <div class="button">
+                <a href="../home"><img src="../eps.png"></a>
+            </div>
 
-        <div class="nav_hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <div class="nav_hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-        <div class="nav_menu">
-        <ul id="nav-links">
-            <li class="button"><span><a href="../home">home</a></span></li>
-            <li class="button"><span><a href="about">about</a></span></li>
-            <li class="button"><span><a class="activated" href="products">products</a></span></li>
-            <li class="button"><span><a href="projects">projects</a></span></li>
-            <li class="button"><span><a href="contact">contact</a></span></li>
-        </ul>
-        </div>
+            <div class="nav_menu">
+                <ul id="nav-links">
+                    <li class="button"><span><a href="../home">home</a></span></li>
+                    <li class="button"><span><a href="about">about</a></span></li>
+                    <li class="button"><span><a class="activated" href="products">products</a></span></li>
+                    <li class="button"><span><a href="projects">projects</a></span></li>
+                    <li class="button"><span><a href="contact">contact</a></span></li>
+                </ul>
+            </div>
         </nav>
 
-
-    <!-- Showcase Code -->
-    
-    <div class="content-wrapper">
-    <h1>Our Products</h1>
-    <p>Explore our range of high-quality refuelling solutions designed for the aviation industry.</p>
-
-    <script 
-        async=true 
-        type="text/javascript"
-        src="https://639159035035626029.publisher.impartner.io/Csp/?mfrname=parker">
-    </script>
-    
-    
-    
-    
-    
-    </div>
-    
-
-
-    <div class="footer">
-        <div class="img">
-            <a href="../home.html"><img src="../eps-valkoinen.png"></a>
+        <div class="header">
+            <h1>Our Products</h1>
+            <p>Explore our range of high-quality refuelling solutions designed for the aviation industry.</p>
         </div>
-        <div class="footer-content">
-            <p>© 2026 EPS Nordics Oy</p>
-            <div class="footer-pdf">
-                    <a href="../eps_privacy_policy.pdf" target="_blank"  rel="noopener noreferrer">Privacy policy</a>
+
+        <div class="content-wrapper">
+            
+            <aside class="sidebar">
+                <h2>Product Categories</h2>
+                <ul>
+                    <li><button class="tab-link active" data-target="parker-solutions">Parker Solutions</button></li>
+                    <li><button class="tab-link" data-target="aerofuel">Aerofuel</button></li>
+                    <li><button class="tab-link" data-target="alfons-haar">Alfons Haar</button></li>
+                    <li><button class="tab-link" data-target="efco">EFCO</button></li>
+                    <li><button class="tab-link" data-target="emco-wheaton-todo">Emco Wheaton & Todo</button></li>
+                    <li><button class="tab-link" data-target="euroquip">Euroquip</button></li>
+                    <li><button class="tab-link" data-target="isoil">Isoil</button></li>
+                    <li><button class="tab-link" data-target="idex_lc_sampi">Idex Liquid Controls / Sampi</button></li>
+                    <li><button class="tab-link" data-target="kaucon">Kaucon</button></li>
+                    <li><button class="tab-link" data-target="reelcraft">Reelcraft</button></li>
+                    <li><button class="tab-link" data-target="silea">Silea</button></li>
+                    <li><button class="tab-link" data-target="trelleborg">Trelleborg</button></li>
+                    <li><button class="tab-link" data-target="zenith">Zenith</button></li>
+                </ul>
+            </aside>
+
+            <main class="product-content">
+                
+                <!-- PARKER -->
+
+                <section id="parker-solutions" class="tab-content active">
+                    <div class="parker-desktop">
+                
+                    </div>
+
+                    <div class="parker-mobile">
+                        <img src="../logos/parker.png" alt="Parker Aerospace" class="product-logo">
+
+                        <div class="brand-intro">
+                            <p>Parker is a global leader in aviation refuelling technologies, fluid solutions, and filtration systems. Renowned worldwide for their Velcon filtration products and high-quality nozzles, Parker ensures the ultimate cleanliness, safety, and efficiency in aviation fuel handling.</p>
+                        </div>
+
+                        <div class="brand-capabilities">
+                            <h3>Available Solutions & Equipment:</h3>
+                            <ul>
+                                <li><strong>Aviation Fuel Filtration:</strong> Industry-standard Velcon filter vessels, monitor cartridges, and water coalescers compliant with EI standards.</li>
+                                <li><strong>Ground Fueling Components:</strong> Premium underwing refuelling nozzles, couplers, and pressure control valves.</li>
+                                <li><strong>Fuel Quality Control:</strong> High-precision testing equipment and electronic sensors for real-time fuel cleanliness monitoring.</li>
+                            </ul>
+                        </div>
+
+                        <div class="brand-actions">
+                            <a href="https://www.parker.com" target="_blank" rel="noopener" class="btn-secondary">Parker Website ↗</a>
+                            <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- EMCO WHEATON & TODO -->
+                <section id="emco-wheaton-todo" class="tab-content">
+                    <div class="logo-group">
+                        <img src="../logos/emcowheaton.png" alt="Emco Wheaton" class="product-logo">
+                        <img src="../logos/todo-logo.jpg" alt="Todo" class="product-logo">
+                    </div>
+
+                    <div class="brand-intro">
+                        <p>Emco Wheaton and TODO deliver world-class solutions for the safe and efficient transfer of hazardous liquids and gases. Their products are the aviation industry standard when total spill prevention and heavy-duty reliability are required.</p>
+                    </div>
+
+                    <div class="capabilities-container">
+                        
+                        <div class="brand-capabilities">
+                            <h3>Emco Wheaton Solutions:</h3>
+                            <ul>
+                                <li><strong>Dry Break Couplings:</strong> Safe and spill-free fluid transfer connections.</li>
+                                <li><strong>Refuelling Nozzles:</strong> High-performance underwing and overwing nozzles for aviation.</li>
+                                <li><strong>Loading Arms:</strong> Specialized top and bottom loading systems for terminals and trucks.</li>
+                                <li><strong>Grounding Systems:</strong> Safety systems to prevent static electricity risks during transfer.</li>
+                            </ul>
+                        </div>
+
+                        <div class="brand-capabilities">
+                            <h3>TODO Solutions:</h3>
+                            <ul>
+                                <li><strong>TODO-MATIC®:</strong> Dry break couplings engineered for safe fluid and fuel transfer.</li>
+                                <li><strong>TODO-GAS®:</strong> Specialized couplings for the secure handling and bunkering of LPG and gases.</li>
+                                <li><strong>Swivels:</strong> Hose swivel joints designed to prevent hose twist and prolong equipment lifespan.</li>
+                                <li><strong>Safety Breakaway Couplings:</strong> Emergency release couplings that automatically split and seal in case of a pull-away incident.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.emcowheaton.com" target="_blank" rel="noopener" class="btn-secondary">Emco Wheaton Website ↗</a>
+                        <a href="https://www.gardnerdenver.com/en-co/todo" target="_blank" rel="noopener" class="btn-secondary">TODO Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--ALFONS HAAR-->
+                <section id="alfons-haar" class="tab-content">
+                    <img src="../logos/alfons-haar.png" alt="Alfons Haar" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>Alfons Haar is a German high-technology manufacturer specializing in the efficient and secure management of liquid fuels. Their equipment is globally recognized for its exceptional precision, long service life, and seamless integration of mechanics and electronics.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Vane Pumps:</strong> High-efficiency, low-wear rotary vane pumps for fuel transfer.</li>
+                            <li><strong>PreciMeter & Electronics:</strong> Advanced electronic registers and metering systems for custody transfer measurement.</li>
+                            <li><strong>Venturi Systems:</strong> High-precision venturi tubes for accurate additive injection and pressure control.</li>
+                            <li><strong>Manifold Systems:</strong> Compact and optimized valve manifolds for refuelling vehicles.</li>
+                            <li><strong>Sampling Systems:</strong> Automated and closed-loop fuel sampling equipment.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.alfons-haar.de" target="_blank" rel="noopener" class="btn-secondary">Alfons Haar Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--TRELLEBORG-->
+                <section id="trelleborg" class="tab-content">
+                    <img src="../logos/Trelleborg_logo.png" alt="Trelleborg" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>Trelleborg is a world-class manufacturer of high-performance polymer solutions for demanding industrial environments. In the aviation sector, they are the industry standard for premium refuelling hoses, trusted globally for their exceptional safety, flexibility, and long-term durability under extreme conditions.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Aviation Refuelling Hoses:</strong> High-quality hoses certified to EI 1529 and ISO 1825 standards for hydrant dispensers and refuellers.</li>
+                            <li><strong>Suction & Discharge Hoses:</strong> Heavy-duty hoses designed for safe fuel transfer in bulk terminals and storage facilities.</li>
+                            <li><strong>Hose Assemblies:</strong> Factory-tested and certified complete hose systems fitted with premium couplings.</li>
+                            <li><strong>Expansion Joints & Seals:</strong> Specialized rubber expansion joints to absorb movement and vibration in fuel piping systems.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.trelleborg.com" target="_blank" rel="noopener" class="btn-secondary">Trelleborg Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--ZENITH-->
+                <section id="zenith" class="tab-content">
+                    <img src="../logos/zenith-logo.png" alt="Zenith" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>Zenith is a highly respected manufacturer of precision fuel system components. In the aviation refuelling industry, they are trusted for their exceptionally reliable pressure control solutions and heavy-duty hardware designed to maintain safe and stable fuel flow during critical transfer operations.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Pressure Control Valves:</strong> High-precision regulators to prevent overpressure in aircraft fuel tanks during high-flow refuelling.</li>
+                            <li><strong>Hydrant Pit Valves:</strong> Heavy-duty valves for underground fuel hydrant systems at airport aprons.</li>
+                            <li><strong>Inline Control Valves:</strong> Reliable mecanic valves for flow control and surge protection in fuel systems.</li>
+                            <li><strong>Spare Parts & Repair Kits:</strong> OEM diaphragms, seals, and spring kits to maintain existing Zenith valves in top condition.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://zenith-aerotechnics.com" target="_blank" rel="noopener" class="btn-secondary">Zenith Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--AEROFUEL-->
+                <section id="aerofuel" class="tab-content">
+                    <img src="../logos/aerofuel.png" alt="Aerofuel" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>Aerofuel is an innovative provider of automation and digital control systems for aviation refuelling. They specialize in modernizing fuel management with smart technology, ensuring precise data tracking, and maximizing operational safety on the apron.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Refuelling Automation:</strong> Smart control panels and automated systems for refuelling vehicles.</li>
+                            <li><strong>Electronic Registers:</strong> Digital data logging and real-time fuel volume tracking systems.</li>
+                            <li><strong>Deadman Systems:</strong> Wireless and wired deadman controls to guarantee operator and airfield safety.</li>
+                            <li><strong>Overfill Prevention:</strong> High-precision electronic sensors and shut-off systems for storage tanks.</li>
+                            <li><strong>Custom Integrations:</strong> Tailored electronic and software updates for legacy refuelling systems.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://aerofuelinternational.com" target="_blank" rel="noopener" class="btn-secondary">Aerofuel Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--KAUCON-->
+                <section id="kaucon" class="tab-content">
+                    <img src="../logos/kaucon.png" alt="Kaucon" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>Founded in 1989, Kaucon Oy is a premier specialist in manufacturing high-quality, UN-approved Intermediate Bulk Containers (IBCs) and large-scale packaging solutions. Their robust containment systems are engineered to meet the strict storage and transport requirements of the chemical, food, environmental, and logistics industries.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>UN-Approved IBC Containers:</strong> High-safety intermediate bulk containers certified for the secure transport and storage of hazardous liquids and regulated materials.</li>
+                            <li><strong>Industrial Large Packaging:</strong> Heavy-duty packaging solutions tailored for demanding industrial logistics and bulk material handling.</li>
+                            <li><strong>Chemical & Food Grade Storage:</strong> Specially engineered containers compliant with the strict hygiene and chemical resistance standards required by process industries.</li>
+                            <li><strong>Customized Containment Solutions:</strong> High-reliability containers designed and built to optimize space, durability, and safety across transport networks.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.kaucon.com" target="_blank" rel="noopener" class="btn-secondary">Kaucon Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!-- REELCRAFT -->
+                <section id="reelcraft" class="tab-content">
+                    <img src="../logos/reel_logo.gif" alt="Reelcraft" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>Reelcraft is the leading global manufacturer of professional-grade hose, cord, and cable reels. In the aviation sector, they provide exceptionally rugged, spark-free, and high-capacity winding systems engineered to keep refuelling areas safe, organized, and highly efficient.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Aviation Hose Reels:</strong> Heavy-duty, fluid-path reels designed specifically for large-diameter aviation refuelling hoses.</li>
+                            <li><strong>Static Discharge Reels:</strong> High-reliability grounding reels equipped with steel cables to safely discharge static electricity during refuelling.</li>
+                            <li><strong>Spring Driven Reels:</strong> Convenient, automatically retracting reels for smaller air, water, or oil service hoses on the apron.</li>
+                            <li><strong>Hand Crank & Motor Driven Reels:</strong> Robust manual, electric, or pneumatic drive reels built for demanding, continuous operations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.reelcraft.com" target="_blank" rel="noopener" class="btn-secondary">Reelcraft Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--EUROQUIP-->
+                <section id="euroquip" class="tab-content">
+                    <img src="../logos/euroquip.png" alt="Euroquip" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>Euroquip is an established specialist in fluid handling technology and fuel transfer components. Designed for demanding industrial environments, their equipment delivers high operational safety, robust mecanic reliability, and precise flow control for fuel distribution systems.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Fluid Transfer Components:</strong> High-performance valves, couplings, and fittings optimized for petroleum and fuel handling.</li>
+                            <li><strong>Pumping & Metering Units:</strong> Reliable technical solutions for accurate flow measurement and safe fluid distribution.</li>
+                            <li><strong>System Accessories:</strong> Specialized hardware and safety equipment engineered to minimize wear and prevent leaks in piping networks.</li>
+                            <li><strong>Spare Parts & Support:</strong> High-quality OEM components and seal kits to ensure the continuous uptime of Euroquip systems.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.euroquip.be" target="_blank" rel="noopener" class="btn-secondary">Euroquip Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!-- ISOIL -->
+                <section id="isoil" class="tab-content">
+                    <img src="../logos/isoil.png" alt="ISOIL Impianti" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>ISOIL Impianti is a global leader in high-precision flow measurement and automation solutions for the petroleum and aviation sectors. Their cutting-edge systems are world-renowned for custody transfer accuracy, heavy-duty reliability, and full compliance with international aviation standards.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Positive Displacement Meters:</strong> High-accuracy BM Series meters engineered for precise aviation fuel and oil volume measurement.</li>
+                            <li><strong>Electronic Registers:</strong> Advanced digital registers (such as VEGA series) for automation, data logging, and safe custody transfer processing.</li>
+                            <li><strong>Control Valves:</strong> Specialized hydraulic control valves designed for smooth flow regulation, batch control, and shock elimination.</li>
+                            <li><strong>Complete Skids & Modules:</strong> Fully integrated and factory-tested metering modules for airport terminals and loading bays.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.isoilmeter.com" target="_blank" rel="noopener" class="btn-secondary">ISOIL Impianti Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--SILEA-->
+                <section id="silea" class="tab-content">
+                    <img src="../logos/Silea+AH.png" alt="Silea" class="product-logo">
+
+                    <div class="brand-intro">
+                        <h2>Silea</h2>
+                        <p>Silea solves complex challenges in liquid transfer, covering hydrocarbons, industrial liquids, chemicals, and food products. In addition to their extensive standard product line, they possess the unique capability to develop fully customized engineering projects (Custom Project Implementation) tailored to any specific operational requirement.</p>
+                    </div>
+
+                    <div class="capabilities-container">
+                        
+                        <div class="brand-capabilities">
+                            <h3>Transfer Systems & Components:</h3>
+                            <ul>
+                                <li><strong>Loading & Unloading Arms:</strong> High-performance top and bottom loading arms, including specialized loading arms for LPG.</li>
+                                <li><strong>Pumps & Metering:</strong> Positive displacement rotary vane pumps, integrated pump units, and complete metering skids.</li>
+                                <li><strong>Tank & Piping Equipment:</strong> Floating suction units for clean fuel extraction, high-durability swivel joints, and electrical tracing systems.</li>
+                            </ul>
+                        </div>
+
+                        <div class="brand-capabilities">
+                            <h3>Safety & Terminal Equipment:</h3>
+                            <ul>
+                                <li><strong>Couplings & Valves:</strong> API couplers, Emergency Release Couplings (ERC valves), and breakaway systems to prevent spills.</li>
+                                <li><strong>Bay Safety & Access:</strong> Complete loading bays for trucks, specialized LPG loading stations, and folding stairs for safe truck access.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.silea.it" target="_blank" rel="noopener" class="btn-secondary">Silea Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!-- IDEX LC SAMPI -->
+                <section id="idex_lc_sampi" class="tab-content">
+                    <div class="logo-group">
+                        <img src="../logos/idex_lc_sampi.png" alt="idex_lc_sampi" class="product-logo">
+                    </div>
+
+                    <div class="brand-intro">
+                        <h2>Liquid Controls & SAMPI (IDEX Energy)</h2>
+                        <p>As premier brands under the IDEX Energy portfolio, Liquid Controls and SAMPI are global benchmarks for high-precision custody transfer measurement. Their rotary positive displacement meters and electronic registration systems deliver unmatched reliability and accuracy for aviation refuelling worldwide.</p>
+                    </div>
+
+                    <div class="capabilities-container">
+                        
+                        <div class="brand-capabilities">
+                            <h3>Liquid Controls Solutions:</h3>
+                            <ul>
+                                <li><strong>M-Series Meters:</strong> Industry-standard positive displacement meters known for low pressure drop and extreme accuracy.</li>
+                                <li><strong>LectroCount® Electronic Registers:</strong> Advanced digital registers for automated batching, data logging, and wireless communication.</li>
+                                <li><strong>Air Eliminators & Strainers:</strong> High-efficiency systems designed to remove air and particulates before fuel measurement.</li>
+                            </ul>
+                        </div>
+
+                        <div class="brand-capabilities">
+                            <h3>SAMPI Solutions:</h3>
+                            <ul>
+                                <li><strong>SM-Series Meters:</strong> European-manufactured rotary meters fully compliant with international weights and measures standards.</li>
+                                <li><strong>TEX Electronic Registers:</strong> Robust electronic meter-heads designed for hazardous environments and ATEX zones.</li>
+                                <li><strong>Hydrant Dispenser Modules:</strong> Compact metering and valve components engineered specifically for airport apron hydrant systems.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.lcmeter.com" target="_blank" rel="noopener" class="btn-secondary">Liquid Controls Website ↗</a>
+                        <a href="https://www.sampi.it" target="_blank" rel="noopener" class="btn-secondary">SAMPI Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+                <!--EFCO-->
+                <section id="efco" class="tab-content">
+                    <img src="../logos/efco_logo.svg" alt="EFCO Swiss" class="product-logo">
+
+                    <div class="brand-intro">
+                        <p>EFCO is the global market leader in precision machining and testing technology for valves and flanges. In the aviation fuel and petrochemical industries, where absolute valve integrity is vital, EFCO provides premium portable and stationary workshop solutions to ensure leak-free operations and strict safety compliance.</p>
+                    </div>
+
+                    <div class="brand-capabilities">
+                        <h3>Available Solutions & Equipment:</h3>
+                        <ul>
+                            <li><strong>Portable Grinding & Lapping Machines:</strong> High-precision, on-site equipment designed for grinding and lapping valve seats without removing the valve from the piping.</li>
+                            <li><strong>Valve Test Benches:</strong> Advanced stationary and mobile testing systems for hydrostatic and pneumatic pressure testing of shut-off and safety valves.</li>
+                            <li><strong>Turning & Milling Technology:</strong> Robust portable lathe machines for precise machining of sealing surfaces on high-pressure valves and flanges.</li>
+                            <li><strong>Consumables & Accessories:</strong> High-quality grinding abrasives, tools, and technical alignment sets engineered for flawless surface finishing.</li>
+                        </ul>
+                    </div>
+
+                    <div class="brand-actions">
+                        <a href="https://www.efco-usa.com" target="_blank" rel="noopener" class="btn-secondary">EFCO Website ↗</a>
+                        <button class="btn-primary" onclick="location.href='contact'">Request a Quote</button>
+                    </div>
+                </section>
+
+
+            </main>
+        </div>
+
+        <div class="footer">
+            <div class="img">
+                <a href="../home.html"><img src="../eps-valkoinen.png"></a>
+            </div>
+            <div class="footer-content">
+                <p>© 2026 EPS Nordics Oy</p>
+                <div class="footer-pdf">
+                    <a href="../eps_privacy_policy.pdf" target="_blank" rel="noopener noreferrer">Privacy policy</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    
+        <script>
+    let parkerLoaded = false;
 
+    // Tarkistetaan heti alussa, ollaanko isolla näytöllä
+    window.addEventListener('DOMContentLoaded', () => {
+        if (window.innerWidth > 768) {
+            loadParkerScript();
+        }
+    });
 
+    function loadParkerScript() {
+        if (parkerLoaded) return; 
+
+        // TUPLAVARMISTUS: Jos ruutu on pieni, EI ladata skriptiä missään olosuhteissa
+        if (window.innerWidth <= 768) {
+            return;
+        }
+
+        const parkerContainer = document.querySelector('#parker-solutions .parker-desktop');
+        if (parkerContainer) {
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = "https://639159035035626029.publisher.impartner.io/Csp/?mfrname=parker&t=SolutionSyndication&entlv=/category/313601";
+            
+            parkerContainer.appendChild(script);
+            parkerLoaded = true;
+        }
+    }
+
+    document.querySelectorAll('.tab-link').forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelectorAll('.tab-link').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+            button.classList.add('active');
+            
+            const targetId = button.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
+            targetContent.classList.add('active');
+
+            // Ladataan Parker vain jos klikataan Parkeria JA ollaan tietokoneella
+            if (targetId === 'parker-solutions' && window.innerWidth > 768) {
+                loadParkerScript();
+            }
+
+            // MOBIILIKORJAUS: Skrollataan sisällön kohdalle vain, jos kyseessä EI ole Parker
+            if (window.innerWidth <= 768 && targetId !== 'parker-solutions') {
+                targetContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
     </body>
-
 </html>
